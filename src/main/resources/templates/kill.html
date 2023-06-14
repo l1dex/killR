@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<form th:action="@{/addCharacter}"  method="post">
+    <input type="text" th:value="${character}" name="character"/>
+    <input type="submit" title="Добавить перса" value="Добавить перса"/>
+</form>
+<form th:action="@{/addClan}"  method="post">
+    <input type="text" th:value="${clan}" name="clan"/>
+    <input type="submit" title="Добавить клан" value="Добавить клан"/>
+</form>
+<form th:action="@{/getCharacter}"  method="post">
+    <input type="text" th:value="${character}" name="character"/>
+    <input type="submit" title="Добавить перса" value="Найти перса"/>
+    <a th:text="${act}">Zalypa</a>
+</form>
+<form th:action="@{/getClan}"  method="post">
+    <input type="text" th:value="${clan}" name="clan"/>
+    <input type="submit" title="Добавить клан" value="Найти клан"/>
+    <a th:text="${act}">Zalypa</a>
+</form>
